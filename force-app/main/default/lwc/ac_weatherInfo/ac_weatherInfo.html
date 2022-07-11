@@ -1,0 +1,22 @@
+<template>
+  <lightning-card title="Weather Info" icon-name="standard:forecasts">
+    <div class="slds-grid slds-gutters">
+      <div class="slds-col slds-var-m-left_x-small">
+        <p>Address</p>
+        <lightning-formatted-address
+          city={billingCity}
+          country={billingCountry}
+          postal-code={billingPostalCode}
+          province={billingState}
+          street={billingStreet}
+        ></lightning-formatted-address>
+      </div>
+      <div class="slds-col">
+        <p>Current Weather</p>
+        <lightning-formatted-text
+          value={currentWeather}
+        ></lightning-formatted-text>
+      </div>
+    </div>
+  </lightning-card>
+</template>
